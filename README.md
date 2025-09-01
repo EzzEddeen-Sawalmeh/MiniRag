@@ -4,7 +4,7 @@ This is minimal implementation of RAG model to accept files and answer quetions 
 
 ## Requirements
 
-- Python 3.8 or later
+- Python 3.10 or later
 
 #### Install Python using MiniConda
 
@@ -36,3 +36,9 @@ $ cp .env.example .env
 ```
 
 Set your environment variables in the `.env` file. Like `OPENAI_API_KEY` value.
+
+## Run the FastAPI server
+
+```bash
+$ uvicorn main:app --reload --host 0.0.0.0 --port 5000
+```
